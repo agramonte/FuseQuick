@@ -1,0 +1,283 @@
+-- TRACE FILE TRUNCATED --
+-- START TRACE TO FILE --
+tracing to: 'iwtrace.txt'
+MarmaladeSDK v7.8.1 [441714] (S3E Loader v4.40.0)
+Copyright (C) 2001-2014 Marmalade Technologies Ltd.
+System Info:
+ OS           : OSX (13)
+ OS Version   : Darwin 14.3.0 (14.3)
+ Device ID    : OSX (0x1)
+ Device Class : WINDOWS_GENERIC (3000)
+ Phone Number : 0044123456789
+ Unique ID    : SIMULATOR_ID
+ Device Name  : 
+ Memory       : 1048576KiB
+29/08/15 23:08:06.114: [0x00000fa0] DEVICE: Initialising SURFACE
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: video driver: Quartz
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: hw_available: 0
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: wm_available: 1
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: bpp         : 32
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: blit_hw     : 0
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: video_mem   : 0
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: current_w   : 1280
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: current_h   : 800
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: ConfigureSDLVideo_real 0x0 fullscreen 0
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: requesting window: 800x600
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: SDL_HWSURFACE  : 0
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: SDL_ANYFORMAT  : 1
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: SDL_HWACCEL    : 0
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: SDL_ASYNCBLIT  : 0
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: SDL_DOUBLEBUF  : 0
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: SDL_FULLSCREEN : 0
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: SDL_RESIZABLE  : 1
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: SDL_OPENGL     : 0
+29/08/15 23:08:06.114: [0xa0d521d4] SURFACE: calling SetVideoMode: 800x600 16 0x10000010
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: mallocd surface: 0x062f0000 800x600 pitch=3200
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: format = XBGR888 ptr = 0x062f0000, owned = 1, size = 1920000
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: direct copyup: 0 must_lock: 1
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: native: 800x600 (ptr: 0x0611b000 pitch: 3200 bpp: 32)
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: bytes per pixel: 4 colorkey: 0 alpha: 255
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: RGBA shift:     8    16    24     0
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: RGBA loss :     0     0     0     8
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: RGBA mask : 0xff00 0xff0000 0xff000000   0x0
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: SDL_HWSURFACE  : 0
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: SDL_ANYFORMAT  : 0
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: SDL_HWACCEL    : 0
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: SDL_ASYNCBLIT  : 1
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: SDL_DOUBLEBUF  : 0
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: SDL_FULLSCREEN : 0
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: SDL_RESIZABLE  : 1
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: SDL_OPENGL     : 0
+29/08/15 23:08:06.193: [0xa0d521d4] SURFACE: got dimensions from SDL_GetVideoSurface: 800 600
+29/08/15 23:08:06.193: [0x00000fa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=0
+29/08/15 23:08:06.193: [0x00000fa0] SURFACE: s3eSurfaceSetup: does not match native type (requested=RGB565 native=XBGR888)
+29/08/15 23:08:06.193: [0x00000fa0] SURFACE: done s3eSurfaceInit: 800x600 p:3200 (800x600 p:1600) o:0
+29/08/15 23:08:06.193: [0x00000fa0] DEVICE: Initialising EXT
+29/08/15 23:08:06.193: [0x00000fa0] EXT: registering extension: s3eLibrary [0xe6dd6ce5]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eExtLoadLibaray [0xf23d6d85]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eWindow [0xd31aa8a8]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eVFS [0x17f48c9f]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eContacts [0x5e39d2af]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eCompass [0x40d632c6]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: Compass [0xd3653f1b]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eDebugHeap [0xc667a795]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eExtDebugHeap [0xff96de46]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eClipboard [0xd68f3420]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eOSExec [0xc121bcf7]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eExtOSExec [0x20380948]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eEval [0x167d1038]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eExtEval [0xf0421449]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eOSReadString [0x9fe3ea45]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eTestEmulatorConfig [0x4a0d0a4f]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eThread [0xcc0b4a28]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eSocketOpt [0x09cdcdec]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eExtSocketOpt [0x42fd049d]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eTest [0x168503f0]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eMetrics [0x2bc8e047]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: Metrics [0xbe57ec9c]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: s3eLocation [0x91944229]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: Location [0x7604d91e]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: registering extension: OSXDataDirChange [0x48ecb37e]
+29/08/15 23:08:06.194: [0x00000fa0] DEVICE: Initialising CONFIG
+29/08/15 23:08:06.194: [0x00000fa0] DEVICE: Initialising TIMER
+29/08/15 23:08:06.194: [0x00000fa0] DEVICE: Initialising COMPRESSION
+29/08/15 23:08:06.194: [0x00000fa0] DEVICE: DeviceInit done: services=0x0a216148
+29/08/15 23:08:06.194: [0x00000fa0] EXT: s3eExtGetHash: 0xd31aa8a8 [0x00000000 size=0]
+29/08/15 23:08:06.194: [0x00000fa0] EXT: initializing extension: s3eWindow
+29/08/15 23:08:06.194: [0x00000fa0] EXT: initializing extension: s3eWindow 0x0008b8c0
+29/08/15 23:08:06.194: [0x00000fa0] DEVICE: SetupPaths: NULL
+29/08/15 23:08:06.194: [0x00000fa0] LOADER: ParseCommandLineData ["--via=/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample//build_temp/web_debug.via" ]
+29/08/15 23:08:06.194: [0x00000fa0] LOADER: setting [commandline]  via=/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample//build_temp/web_debug.via
+29/08/15 23:08:06.194: [0x00000fa0] LOADER: parsing via file: /Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample//build_temp/web_debug.via
+29/08/15 23:08:06.194: [0x00000fa0] FILE: open: /Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample//build_temp/web_debug.via 0X9 0X0
+29/08/15 23:08:06.194: [0x00000fa0] FILE: s3eFileOpen('/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample//build_temp/web_debug.via', 'r') succeeded, id=1540136 p=0x00178028
+29/08/15 23:08:06.194: [0x00000fa0] LOADER: reading 1950 bytes from via files
+29/08/15 23:08:06.195: [0x00000fa0] FILE: s3eFileClose h=0x00178028
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: ParseCommandLineData ["--via=/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample//build_temp/web_debug.via"  --dll="/Applications/Marmalade.app/Contents/quick/target/osx/quick_prebuilt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  via=/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample//build_temp/web_debug.via
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  dll=/Applications/Marmalade.app/Contents/quick/target/osx/quick_prebuilt_d.s86
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  release=0
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  sim-release=None
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  data=/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  checks3edir=1
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  app-icf1=/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources/common.icf
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  app-icf2=/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources/app.icf
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  osx-ext-dll1=/Applications/Marmalade.app/Contents/extensions/s3eWebView/lib/osx/libs3eWebView.dylib
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  osx-ext-dll2=/Applications/Marmalade.app/Contents/extensions/s3eFlurry/lib/osx/libs3eFlurry.dylib
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt1=/Applications/Marmalade.app/Contents/modules/iwbilling/docs/billing.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt2=/Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt3=/Applications/Marmalade.app/Contents/quick/docs/app.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt4=/Applications/Marmalade.app/Contents/quick/docs/billing.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt5=/Applications/Marmalade.app/Contents/quick/docs/iwgeom.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt6=/Applications/Marmalade.app/Contents/quick/docs/iwgl.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt7=/Applications/Marmalade.app/Contents/quick/docs/iwgx.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt8=/Applications/Marmalade.app/Contents/quick/docs/iwgxfont.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt9=/Applications/Marmalade.app/Contents/quick/docs/iwhttp.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt10=/Applications/Marmalade.app/Contents/quick/docs/iwresmanager.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt11=/Applications/Marmalade.app/Contents/quick/docs/iwui.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt12=/Applications/Marmalade.app/Contents/quick/docs/iwutil.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt13=/Applications/Marmalade.app/Contents/quick/docs/quick.config.txt
+29/08/15 23:08:06.195: [0x00000fa0] LOADER: setting [commandline]  config-txt14=/Applications/Marmalade.app/Contents/s3e/s3e.config.txt
+29/08/15 23:08:06.196: [0x00000fa0] LOADER: setting [commandline]  config-txt15=/Applications/Marmalade.app/Contents/s3e/s3e.config.txt
+29/08/15 23:08:06.196: [0x00000fa0] LOADER: setting [commandline]  s3e-dir=/Applications/Marmalade.app/Contents/s3e
+29/08/15 23:08:06.196: [0x00000fa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+29/08/15 23:08:06.196: [0x00000fa0] FILE: fs[00]: system[rom://] '/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources'
+29/08/15 23:08:06.196: [0x00000fa0] FILE: fs[03]: system[raw://] ''
+29/08/15 23:08:06.196: [0x00000fa0] FILE: listed 2 active filesystems
+29/08/15 23:08:06.196: [0x00000fa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+29/08/15 23:08:06.196: [0x00000fa0] FILE: fs[00]: system[rom://] '/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources'
+29/08/15 23:08:06.196: [0x00000fa0] FILE: fs[01]: system[ram://] '/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources-ram'
+29/08/15 23:08:06.196: [0x00000fa0] FILE: fs[03]: system[raw://] ''
+29/08/15 23:08:06.196: [0x00000fa0] FILE: listed 3 active filesystems
+29/08/15 23:08:06.197: [0x00000fa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+29/08/15 23:08:06.197: [0x00000fa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+29/08/15 23:08:06.197: [0x00000fa0] LOADER: Using data directory /Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources as ROM drive
+29/08/15 23:08:06.197: [0x00000fa0] LOADER: Using directory /Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources-ram as RAM drive
+29/08/15 23:08:06.197: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwbilling/docs/billing.config.txt 0X9 0X0
+29/08/15 23:08:06.197: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwbilling/docs/billing.config.txt', 'r') succeeded, id=1000 p=0x00179a50
+29/08/15 23:08:06.197: [0x00000fa0] FILE: s3eFileClose h=0x00179a50
+29/08/15 23:08:06.197: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt 0X9 0X0
+29/08/15 23:08:06.197: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt', 'r') succeeded, id=1001 p=0x00179e6c
+29/08/15 23:08:06.197: [0x00000fa0] FILE: s3eFileClose h=0x00179e6c
+29/08/15 23:08:06.198: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/quick/docs/app.config.txt 0X9 0X0
+29/08/15 23:08:06.198: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/quick/docs/app.config.txt', 'r') succeeded, id=1002 p=0x0017a288
+29/08/15 23:08:06.198: [0x00000fa0] FILE: s3eFileClose h=0x0017a288
+29/08/15 23:08:06.198: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/quick/docs/billing.config.txt 0X9 0X0
+29/08/15 23:08:06.198: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/quick/docs/billing.config.txt', 'r') succeeded, id=1003 p=0x0017a6a4
+29/08/15 23:08:06.198: [0x00000fa0] FILE: s3eFileClose h=0x0017a6a4
+29/08/15 23:08:06.198: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/quick/docs/iwgeom.config.txt 0X9 0X0
+29/08/15 23:08:06.198: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/quick/docs/iwgeom.config.txt', 'r') succeeded, id=1004 p=0x0017aac0
+29/08/15 23:08:06.198: [0x00000fa0] FILE: s3eFileClose h=0x0017aac0
+29/08/15 23:08:06.198: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/quick/docs/iwgl.config.txt 0X9 0X0
+29/08/15 23:08:06.198: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/quick/docs/iwgl.config.txt', 'r') succeeded, id=1005 p=0x0017aedc
+29/08/15 23:08:06.198: [0x00000fa0] FILE: s3eFileClose h=0x0017aedc
+29/08/15 23:08:06.198: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/quick/docs/iwgx.config.txt 0X9 0X0
+29/08/15 23:08:06.198: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/quick/docs/iwgx.config.txt', 'r') succeeded, id=1006 p=0x0017b2f8
+29/08/15 23:08:06.199: [0x00000fa0] FILE: s3eFileClose h=0x0017b2f8
+29/08/15 23:08:06.199: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/quick/docs/iwgxfont.config.txt 0X9 0X0
+29/08/15 23:08:06.199: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/quick/docs/iwgxfont.config.txt', 'r') succeeded, id=1007 p=0x0017b714
+29/08/15 23:08:06.199: [0x00000fa0] FILE: s3eFileClose h=0x0017b714
+29/08/15 23:08:06.199: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/quick/docs/iwhttp.config.txt 0X9 0X0
+29/08/15 23:08:06.199: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/quick/docs/iwhttp.config.txt', 'r') succeeded, id=1008 p=0x0017bb30
+29/08/15 23:08:06.199: [0x00000fa0] FILE: s3eFileClose h=0x0017bb30
+29/08/15 23:08:06.199: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/quick/docs/iwresmanager.config.txt 0X9 0X0
+29/08/15 23:08:06.199: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/quick/docs/iwresmanager.config.txt', 'r') succeeded, id=1009 p=0x0017bf4c
+29/08/15 23:08:06.199: [0x00000fa0] FILE: s3eFileClose h=0x0017bf4c
+29/08/15 23:08:06.199: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/quick/docs/iwui.config.txt 0X9 0X0
+29/08/15 23:08:06.199: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/quick/docs/iwui.config.txt', 'r') succeeded, id=1010 p=0x0017c368
+29/08/15 23:08:06.199: [0x00000fa0] FILE: s3eFileClose h=0x0017c368
+29/08/15 23:08:06.199: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/quick/docs/iwutil.config.txt 0X9 0X0
+29/08/15 23:08:06.200: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/quick/docs/iwutil.config.txt', 'r') succeeded, id=1011 p=0x0017c784
+29/08/15 23:08:06.200: [0x00000fa0] FILE: s3eFileClose h=0x0017c784
+29/08/15 23:08:06.200: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/quick/docs/quick.config.txt 0X9 0X0
+29/08/15 23:08:06.200: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/quick/docs/quick.config.txt', 'r') succeeded, id=1012 p=0x0017cba0
+29/08/15 23:08:06.200: [0x00000fa0] FILE: s3eFileClose h=0x0017cba0
+29/08/15 23:08:06.200: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/s3e/s3e.config.txt 0X9 0X0
+29/08/15 23:08:06.200: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/s3e/s3e.config.txt', 'r') succeeded, id=1013 p=0x0017cfbc
+29/08/15 23:08:06.205: [0x00000fa0] FILE: s3eFileClose h=0x0017cfbc
+29/08/15 23:08:06.205: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/s3e/s3e.config.txt 0X9 0X0
+29/08/15 23:08:06.205: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/s3e/s3e.config.txt', 'r') succeeded, id=1014 p=0x0017d3d8
+29/08/15 23:08:06.212: [0x00000fa0] FILE: s3eFileClose h=0x0017d3d8
+29/08/15 23:08:06.213: [0x00000fa0] FILE: open: /Applications/Marmalade.app/Contents/s3e/s3e.icf 0X9 0X0
+29/08/15 23:08:06.213: [0x00000fa0] FILE: s3eFileOpen('raw:///Applications/Marmalade.app/Contents/s3e/s3e.icf', 'rb') succeeded, id=1015 p=0x0017d7f4
+29/08/15 23:08:06.213: [0x00000fa0] LOADER: Loading config from: /Applications/Marmalade.app/Contents/s3e/s3e.icf
+29/08/15 23:08:06.214: [0x00000fa0] FILE: s3eFileClose h=0x0017d7f4
+29/08/15 23:08:06.214: [0x00000fa0] LOADER: Loading app-icf from command line specified location /Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources/common.icf
+29/08/15 23:08:06.214: [0x00000fa0] FILE: open: /Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources/common.icf 0X9 0X0
+29/08/15 23:08:06.214: [0x00000fa0] FILE: s3eFileOpen('raw:///Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources/common.icf', 'rb') succeeded, id=1016 p=0x0017dc10
+29/08/15 23:08:06.214: [0x00000fa0] LOADER: Loading config from: raw:///Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources/common.icf
+29/08/15 23:08:06.214: [0x00000fa0] FILE: s3eFileClose h=0x0017dc10
+29/08/15 23:08:06.214: [0x00000fa0] FILE: open: /Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources/app.icf 0X9 0X0
+29/08/15 23:08:06.214: [0x00000fa0] FILE: s3eFileOpen('raw:///Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources/app.icf', 'rb') succeeded, id=1017 p=0x0017e02c
+29/08/15 23:08:06.214: [0x00000fa0] LOADER: Loading config from: raw:///Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample/resources/app.icf
+29/08/15 23:08:06.214: [0x00000fa0] FILE: s3eFileClose h=0x0017e02c
+29/08/15 23:08:06.214: [0x00000fa0] LOADER: ParseCommandLineData ["--via=/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample//build_temp/web_debug.via" ]
+29/08/15 23:08:06.214: [0x00000fa0] LOADER: setting [commandline]  via=/Users/adriangomez/OneDrive/Development/~Extensions/FuseQuick/QuickFuseExample//build_temp/web_debug.via
+MarmaladeSDK v7.8.1 [441714] (S3E Loader v4.40.0)
+Copyright (C) 2001-2014 Marmalade Technologies Ltd.
+System Info:
+ OS           : OSX (13)
+ OS Version   : Darwin 14.3.0 (14.3)
+ Device ID    : OSX (0x1)
+ Device Class : WINDOWS_GENERIC (3000)
+ Phone Number : 0044123456789
+ Unique ID    : SIMULATOR_ID
+ Device Name  : 
+ Memory       : 1048576KiB
+29/08/15 23:08:06.251: [0x00000fa0] LIBRARY: s3eLibraryLoad '/Applications/Marmalade.app/Contents/extensions/s3eWebView/lib/osx/libs3eWebView_d.dylib' -> 0x7bf7ca10
+29/08/15 23:08:06.256: [0x00000fa0] LIBRARY: s3eLibraryLoad '/Applications/Marmalade.app/Contents/extensions/s3eFlurry/lib/osx/libs3eFlurry_d.dylib' -> 0x7be46900
+29/08/15 23:08:06.297: [0x00000fa0] GL: GLES desired version is 2
+29/08/15 23:08:06.297: [0x00000fa0] GL: DLL search path: /Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2
+29/08/15 23:08:06.299: [0x00000fa0] LIBRARY: s3eLibraryLoad '/Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libGLESv2.dylib' -> 0x7bf88660
+29/08/15 23:08:06.299: [0x00000fa0] GL: Loaded GL DLL /Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libGLESv2.dylib
+29/08/15 23:08:06.299: [0x00000fa0] LIBRARY: s3eLibraryLoad '/Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libEGL.dylib' -> 0x7bf88730
+29/08/15 23:08:06.299: [0x00000fa0] GL: Loaded GL DLL /Applications/Marmalade.app/Contents/s3e/loader/osx/dgles2/libEGL.dylib
+29/08/15 23:08:06.299: [0x00000fa0] GL: Using GLES 2
+29/08/15 23:08:06.375: [0x00000fa0] SPLASH: s3eSplashScreenManager::add > splash->show()
+29/08/15 23:08:06.375: [0x00000fa0] SPLASH: displaying debug splash-screen
+29/08/15 23:08:06.399: [0x00000fa0] SPLASH: No splash screen specified
+29/08/15 23:08:06.449: [0x00000fa0] LIBRARY: s3eLibraryLoad '/Applications/Marmalade.app/Contents/quick/target/osx/quick_prebuilt_d.s86' -> 0x7bf8c6a0
+COCOS2DX LOG: cocos2d: cocos2d-2.1beta3-x-2.1.0
+29/08/15 23:08:08.378: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0x7bf89b20
+29/08/15 23:08:08.391: [0x00000fa0] GL: s3eEglInitialize: 0x7bf89b20 -> 1 1.4
+29/08/15 23:08:08.391: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+29/08/15 23:08:08.391: [0xfa0] IW_GL: S3E_EGL_VERSION: 0103
+29/08/15 23:08:08.391: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+29/08/15 23:08:08.391: [0xfa0] IW_GL: EGL_VENDOR: Nokia Corporation
+29/08/15 23:08:08.391: [0xfa0] IW_GL: EGL_VERSION: 1.4 DGLES2-1.4.0
+29/08/15 23:08:08.391: [0xfa0] GL_CORE: rejecting config 0: EGL_DEPTH_SIZE < 16
+29/08/15 23:08:08.391: [0xfa0] GL_CORE: rejecting config 3: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+29/08/15 23:08:08.391: [0xfa0] GL_CORE: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+29/08/15 23:08:08.391: [0xfa0] GL_CORE: rejecting config 5: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+29/08/15 23:08:08.391: [0xfa0] GL_CORE: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+29/08/15 23:08:08.391: [0xfa0] GL_CORE: EGL: Chose EGL_CONFIG_ID 2
+29/08/15 23:08:08.393: [0x00000fa0] GL: eglCreateContext: 0x7bef4510
+29/08/15 23:08:08.393: [0x00000fa0] GL: s3eGLGetNativeWindow_platform: main win=0x7bf6a0e0
+29/08/15 23:08:08.395: [0x00000fa0] GL: s3eGLGetNativeWindow_platform: 0x7bf8dfe0
+29/08/15 23:08:08.415: [0xfa0] IW_GL: IW_GL_VERSION 200 (2:T 3:F 31:F).
+29/08/15 23:08:08.415: [0xfa0] IW_GL: GL_VENDOR: NVIDIA Corporation
+29/08/15 23:08:08.415: [0xfa0] IW_GL: GL_RENDERER: NVIDIA GeForce 320M OpenGL Engine
+29/08/15 23:08:08.415: [0xfa0] IW_GL: GL_VERSION: 2.1 NVIDIA-10.0.31 310.90.10.05b12
+29/08/15 23:08:08.415: [0xfa0] IW_GL: GL properties reported by driver:
+29/08/15 23:08:08.415: [0xfa0] IW_GL:     GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 16
+29/08/15 23:08:08.415: [0xfa0] IW_GL:     GL_SHADER_COMPILER: 1
+29/08/15 23:08:08.415: [0xfa0] IW_GL:     GL_MAX_VERTEX_ATTRIBS: 16
+29/08/15 23:08:08.415: [0xfa0] IW_GL:     GL_MAX_VERTEX_UNIFORM_VECTORS: 4096
+29/08/15 23:08:08.415: [0xfa0] IW_GL:     GL_MAX_VARYING_VECTORS: 60
+29/08/15 23:08:08.415: [0xfa0] IW_GL:     GL_MAX_TEXTURE_IMAGE_UNITS: 16
+29/08/15 23:08:08.415: [0xfa0] IW_GL:     GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS: 16
+29/08/15 23:08:08.415: [0xfa0] IW_GL:     GL_MAX_FRAGMENT_UNIFORM_VECTORS: 2048
+29/08/15 23:08:08.415: [0xfa0] IW_GL:     GL_MAX_CUBE_MAP_TEXTURE_SIZE: 8192
+29/08/15 23:08:08.415: [0xfa0] IW_GL:     GL_IMPLEMENTATION_COLOR_READ_FORMAT: GL_RGBA
+29/08/15 23:08:08.415: [0xfa0] IW_GL:     GL_IMPLEMENTATION_COLOR_READ_TYPE: GL_UNSIGNED_BYTE
+29/08/15 23:08:08.416: [0xfa0] IW_GL:     GL_MAX_RENDERBUFFER_SIZE: 8192
+29/08/15 23:08:08.416: [0xfa0] IW_GL:     GL_POINT_SIZE_MAX: 2047
+29/08/15 23:08:08.416: [0xfa0] IW_GL:     GL_MAX_TEXTURE_SIZE: 8192
+29/08/15 23:08:08.416: [0xfa0] IW_GL:     GL_MAX_VIEWPORT_DIMS: (8192, 8192)
+29/08/15 23:08:08.416: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+29/08/15 23:08:08.416: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+29/08/15 23:08:08.416: [0xfa0] IW_GL:     GL_EXT_texture_compression_s3tc
+29/08/15 23:08:08.416: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+
+
+COCOS2DX LOG: cocos2d: GL_VENDOR:     NVIDIA Corporation
+COCOS2DX LOG: cocos2d: GL_RENDERER:   NVIDIA GeForce 320M OpenGL Engine
+COCOS2DX LOG: cocos2d: GL_VERSION:    2.1 NVIDIA-10.0.31 310.90.10.05b12
+COCOS2DX LOG: cocos2d: GL_MAX_TEXTURE_SIZE: 8192
+COCOS2DX LOG: cocos2d: GL_MAX_TEXTURE_UNITS: 16
+COCOS2DX LOG: cocos2d: GL supports PVRTC: NO
+COCOS2DX LOG: cocos2d: GL supports BGRA8888 textures: NO
+COCOS2DX LOG: cocos2d: GL supports NPOT textures: YES
+COCOS2DX LOG: cocos2d: GL supports discard_framebuffer: NO
+COCOS2DX LOG: cocos2d: GL supports shareable VAO: NO
+COCOS2DX LOG: cocos2d: compiled with Profiling Support: NO
+QUICKCPP LOG: Loading app...
+This is my app!
+ERROR: S3E_EXT_ERR_NOT_FOUND in s3eExtGetHash - can't find extension: 0xc8b9be9a
+29/08/15 23:08:11.064: [0xfa0] IW_GL: Leaked Program with handle 2
+29/08/15 23:08:11.064: [0xfa0] IW_GL: Terminating EGL...
+29/08/15 23:08:11.065: [0xfa0] IW_GL: Terminating EGL... Done
+COCOS2DX LOG: cocos2d: deallocing CCDirector 0x6a30308
+COCOS2DX LOG: cocos2d: cocos2d-2.1beta3-x-2.1.0
+COCOS2DX LOG: cocos2d: deallocing CCDirector 0x6a42ea0
+-- END TRACE --
